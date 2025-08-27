@@ -140,7 +140,7 @@
 
 /* Ajuste para que el contenido no quede tapado */
 #presentacion {
-  margin-top: 60px; /* espacio del header */
+  padding-top: 60px; /* mismo alto del header */
 }
 
 /* --- Responsividad --- */
