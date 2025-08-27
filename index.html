@@ -1,38 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
-    <title>Martin Ruppel CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Martin Ruppel CV</title>
 </head>
+<body>
+  
+
+  <!-- Barra superior -->
+  <header class="top-bar">
+    <h2 class="logo">MR</h2>
+    <nav>
+      <a href="#presentacion">Inicio</a>
+      <a href="#descripcion">Sobre mí</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
   <section id="presentacion" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
-<img src="Mr..png" alt="Mi logo personal" width="120">
-<div class="Layer">
-    <h1> Martin <span>Ruppel</span></h1>
-
-    <p>Informático</p>
-    </div>
-</section>
-
-<section id="descripcion" style="padding: 40px; background-color: #ffffff;">
-<div class="TextoDescripcion">
-  <p>Soy estudiante de Informatica, me gusta mantenerme actulizado respecto a las nuevas tecnologias 
-    que aparecen año a año. Mi principal interes es el desarrollo de programas y su implmentacion en la 
-    vida cotidiana ya sea tanto como para estudaintes o facilitar trabajos complejos.
-  </p>
-</div>
-</section>
-
-<section>
-  <footer class="Pie">
- <p>© Me reservo mis derechos</p>
-</footer>
-
-</section>
-
-<body>
+    <img src="Mr..png" alt="Mi logo personal" width="120">
+    <div class="Layer">
+      <h1> Martin <span>Ruppel</span></h1>
     
+    </div>
+  </section>
+
+  <section id="descripcion">
+  <div class="TextoDescripcion">
+    <h2>Sobre mí</h2>
+    <div class="linea"></div>
+    <p>
+      Soy estudiante de Tecnología en Informática, con formación previa en Bachillerato en Informática 
+      y dos años de experiencia académica en el profesorado de la misma área. A lo largo de mi trayectoria 
+      he complementado mis estudios con experiencia práctica en reparación y mantenimiento de computadoras, 
+      dispositivos móviles y equipos eléctricos, así como con conocimientos en electricidad y electromecánica 
+      adquiridos en el ámbito laboral.
+    </p>
+    <p>
+      Me caracterizo por un interés constante en la actualización profesional, participando en cursos de 
+      desarrollo web, inglés y diversas capacitaciones en tecnologías de la información. Esta actitud de 
+      aprendizaje continuo me permite adaptarme con rapidez a nuevas herramientas y entornos.
+    </p>
+    <p>
+      Poseo habilidades técnicas y manuales, junto con una capacidad práctica para la resolución de problemas 
+      y la toma de decisiones en situaciones dinámicas. Mi objetivo es aplicar mis conocimientos y experiencia 
+      para contribuir al desarrollo de soluciones tecnológicas que optimicen procesos y generen valor en el ámbito profesional.
+    </p>
+  </div>
+</section>
+
+<section id="certificados">
+  <div class="CertificadosBox">
+    <h2>Certificados</h2>
+    <div class="linea"></div>
+    <div class="CertificadosGrid">
+
+      <!-- Certificado con imagen (JPG/PNG) -->
+      <div class="certificado">
+        <img src="Certificados/Certificado Ingles 4.jpeg" alt="Certificado 1">
+        <p>Curso de Inglés</p>
+        <a href="Certificados/Certificado Ingles 4.jpeg" target="_blank" class="btn-ver">Ver</a>
+      </div>
+
+      <!-- Certificado solo PDF (sin imagen) -->
+      <div class="certificado">
+        <div class="pdf-placeholder">
+          <span>📄 PDF</span>
+        </div>
+        <p>Curso de Desarrollo Web</p>
+        <a href="Certificados/Certificado IA desde cero.pdf" target="_blank" class="btn-ver">Abrir PDF</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section id="contacto">
+  <div class="ContactoBox">
+    <h2>Contacto</h2>
+    <div class="linea"></div>
+
+    <p><b>Email:</b> 
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=martinruppel.mr@gmail.com" target="_blank">
+    martinruppel.mr@gmail.com
+  </a>
+</p>
+  </div>
+</section>
+
+  <footer class="Pie">
+    <p>© Me reservo mis derechos</p>
+  </footer>
+
 </body>
 </html>
