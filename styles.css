@@ -308,3 +308,8 @@
 .btn-ver:hover {
   background: #008bb5;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
