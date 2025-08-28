@@ -144,49 +144,44 @@
 }
 
 /* --- Responsividad --- */
+/* Ajuste del presentacion para móviles */
 @media (max-width: 768px) {
   #presentacion {
-    font-size: 1.5em;
-    padding: 20px;
+    font-size: 1.3em;
+    height: auto;         /* <--- en lugar de 100vh */
+    min-height: 100vh;    /* <--- asegura que no quede demasiado chico */
+    padding: 100px 20px 60px; /* deja espacio arriba y abajo */
+    text-align: center;
   }
 
-  #presentacion .Layer {
-    padding: 1.5rem 2rem;
+  /* Menú hamburguesa básico */
+  .top-bar nav {
+    display: none; /* ocultamos en móvil */
   }
 
-  .top-bar {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .top-bar.active nav {
+    display: flex;
     flex-direction: column;
-    height: auto;
-    padding: 10px 20px;
-  }
-
-  .top-bar nav a {
-    margin: 10px 0;
-    display: inline-block;
-  }
-
-  #descripcion .TextoDescripcion {
-    font-size: 18px;
-    padding: 20px;
+    margin-top: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  #presentacion {
-    font-size: 1.2em;
-    text-align: center;
+  #descripcion p {
+    font-size: 15px; /* texto más chico en celular */
   }
 
-  #presentacion img {
-    width: 80px;
-    margin-bottom: 15px;
-  }
-
-  #descripcion .TextoDescripcion {
-    font-size: 16px;
-    padding: 15px;
+  .CertificadosGrid {
+    grid-template-columns: 1fr; /* siempre 1 por fila en celular */
   }
 }
+
 /*Informacion de Contacto*/
 #contacto {
   padding: 60px 20px;
