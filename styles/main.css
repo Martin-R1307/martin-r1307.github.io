@@ -1,0 +1,233 @@
+/* --- Estilos generales --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* --- Navegación --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #1c1c1c;
+  position: sticky;
+  top: 0;
+  z-index: 1002;
+}
+/* --- Menú hamburguesa --- */
+.menu-toggle {
+  position: absolute;
+  right: 30px;
+  top: 24px;
+  z-index: 1003;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #00bcd4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #00bcd4;
+}
+
+/* --- Sección Hero --- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+  color: #00bcd4;
+}
+
+.hero-content h2 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid #00bcd4;
+  border-radius: 30px;
+  color: #00bcd4;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00bcd4;
+  color: #121212;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c1c;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+/* --- Contenedor genérico --- */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  animation: fadeIn 1s ease;
+}
+
+/* --- About --- */
+.about p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills li {
+  background-color: #1c1c1c;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #00bcd4;
+  font-weight: 500;
+}
+
+/* --- Projects --- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: #1c1c1c;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* --- Education --- */
+.edu-card {
+  background-color: #1c1c1c;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #00bcd4;
+}
+
+/* --- Contact --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.contact-form button {
+  align-self: flex-start;
+}
+
+.socials {
+  margin-top: 40px;
+  color: #aaa;
+}
+
+.socials a {
+  color: #00bcd4;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* --- Animaciones --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Transiciones entre páginas --- */
+body {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* Cuando el contenido está visible */
+body.fade-in {
+  opacity: 1;
+}
+
+/* Efecto al hacer clic en enlaces internos */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
