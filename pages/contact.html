@@ -18,7 +18,7 @@
         <span></span>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="../index.html">Inicio</a></li>
         <li><a href="about.html">Sobre mí</a></li>
         <li><a href="projects.html">Proyectos</a></li>
         <li><a href="education.html">Educación</a></li>
@@ -27,20 +27,37 @@
     </nav>
   </header>
   <section class="contact">
-    <div class="container">
-      <h1>Contáctame</h1>
-      <p>Si te interesa colaborar conmigo o simplemente quieres saludar, ¡no dudes en escribirme!</p>
-      <form class="contact-form">
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu correo electrónico" required>
-        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
+    <div class="container" style="text-align:center;">
+      <h1 style="font-size:2.1rem; color:#00bcd4; margin-bottom:10px; letter-spacing:0.5px; text-align:center;">Contáctame</h1>
+      <p style="color:#bdbdbd; margin-bottom:30px; text-align:center;">¿Te gustaría trabajar conmigo, colaborar o simplemente saludar? ¡Estoy disponible para nuevas oportunidades y proyectos!</p>
+      <div class="contact-card-minimal" style="justify-content:center;">
+        <a href="#" onclick="abrirGmailDirecto(); return false;" class="btn btn-gmail-minimal" title="Enviar correo directo">
+          <svg style="vertical-align:middle;margin-right:8px;" width="22" height="22" viewBox="0 0 48 48"><g><path fill="#fff" d="M44 8H4c-1.1 0-2 .9-2 2v28c0 1.1.9 2 2 2h40c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 4v2.7L24 27.4 4 14.7V12h40zm0 24H4V17.3l20 12.7 20-12.7V36z"/></g></svg>
+          Enviar correo directo a mi Gmail
+        </a>
+        <script>
+        function abrirGmailDirecto() {
+          window.open('https://mail.google.com/mail/?view=cm&fs=1&to=martinruppel.mr@gmail.com&su=Contacto%20desde%20el%20portfolio','_blank');
+        }
+        </script>
+      </div>
       <div class="socials">
-        <p>Sígueme en redes:</p>
-        <a href="#" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/Martin-R1307" target="_blank">GitHub</a> |
-        <a href="#" target="_blank">Instagram</a>
+        <p style="margin-bottom:12px;">Sígueme en redes:</p>
+        <div class="redes-sociales-minimal">
+          <a href="https://www.linkedin.com/in/martin-ruppel-77a75a387/" target="_blank" title="LinkedIn" class="social-link">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0077B5"/><path d="M7.75 17V10.75" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.75 7.5V7.51" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.25 17V13.25C11.25 12.0074 12.2574 11 13.5 11C14.7426 11 15.75 12.0074 15.75 13.25V17" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Martin-R1307" target="_blank" title="GitHub" class="social-link">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#181717"/><path d="M12 2C6.48 2 2 6.58 2 12.26C2 16.74 4.87 20.44 8.84 21.5C9.34 21.59 9.5 21.29 9.5 21.04C9.5 20.82 9.49 20.18 9.49 19.39C7 19.91 6.48 18.36 6.48 18.36C6.04 17.27 5.37 16.98 5.37 16.98C4.39 16.32 5.45 16.34 5.45 16.34C6.54 16.43 7.09 17.56 7.09 17.56C8.06 19.29 9.68 18.81 10.3 18.56C10.39 17.81 10.68 17.3 11 17.04C8.8 16.78 6.5 15.93 6.5 12.68C6.5 11.7 6.86 10.93 7.43 10.33C7.34 10.07 7.03 9.07 7.52 7.77C7.52 7.77 8.24 7.5 9.5 8.38C10.18 8.19 10.92 8.09 11.66 8.09C12.4 8.09 13.14 8.19 13.82 8.38C15.08 7.5 15.8 7.77 15.8 7.77C16.29 9.07 15.98 10.07 15.89 10.33C16.46 10.93 16.82 11.7 16.82 12.68C16.82 15.94 14.51 16.77 12.3 17.03C12.7 17.36 13.09 18.01 13.09 19.01C13.09 20.36 13.08 21.36 13.08 21.04C13.08 21.29 13.24 21.6 13.74 21.5C17.71 20.44 20.58 16.74 20.58 12.26C20.58 6.58 16.02 2 12 2Z" fill="#fff"/></svg>
+            <span>GitHub</span>
+          </a>
+          <!-- Esta sección contiene información importante sobre el producto 
+          <a href="#" target="_blank" title="Instagram" class="social-link">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#E4405F"/><path d="M16.5 7.5C16.7761 7.5 17 7.72386 17 8C17 8.27614 16.7761 8.5 16.5 8.5C16.2239 8.5 16 8.27614 16 8C16 7.72386 16.2239 7.5 16.5 7.5Z" fill="white"/><rect x="8" y="8" width="8" height="8" rx="4" stroke="white" stroke-width="1.5"/><rect x="3.75" y="3.75" width="16.5" height="16.5" rx="5.25" stroke="white" stroke-width="1.5"/></svg>
+            <span>Instagram</span>
+          </a>-->
+        </div>
       </div>
     </div>
   </section>
